@@ -10,4 +10,4 @@ RUN npm install -g parcel-bundler
 RUN npm install semver
 
 WORKDIR /app/star-history
-ENTRYPOINT ["/usr/bin/npm", "run", "startWebsite"]
+ENTRYPOINT ["/usr/local/bin/parcel", "website/index.html"]
